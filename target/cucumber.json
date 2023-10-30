@@ -1,0 +1,69 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-30T09:18:37.711Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1961716700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Greenkart sayfasini test etme",
+        "description": "",
+        "id": "greenkart-test;greenkart-sayfasini-test-etme",
+        "after": [
+          {
+            "result": {
+              "duration": 196954000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 34444080300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Kullanici \"greenkart_url\" sitesine gider",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"greenkart_url\"",
+                  "offset": 10
+                }
+              ],
+              "location": "GreenKartAnaSayfa.kullanici_sitesine_gider(String)"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@greenkart"
+          }
+        ]
+      }
+    ],
+    "name": "GreenKart test",
+    "description": "",
+    "id": "greenkart-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/GreenKart.feature",
+    "tags": []
+  }
+]

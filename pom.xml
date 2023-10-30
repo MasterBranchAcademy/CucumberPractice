@@ -20,11 +20,13 @@
             <artifactId>selenium-java</artifactId>
             <version>4.9.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>3.8.0</version>
+            <version>5.3.2</version>
         </dependency>
+
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
