@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-10-30T09:18:37.711Z",
+        "start_timestamp": "2023-10-31T19:57:06.348Z",
         "before": [
           {
             "result": {
-              "duration": 1961716700,
+              "duration": 3120541300,
               "status": "passed"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 4,
-        "name": "Greenkart sayfasini test etme",
+        "name": "Greenkart Pagnation sayfasini test etme",
         "description": "",
-        "id": "greenkart-test;greenkart-sayfasini-test-etme",
+        "id": "greenkart-pagnation-test;greenkart-pagnation-sayfasini-test-etme",
         "after": [
           {
             "result": {
-              "duration": 196954000,
+              "duration": 339633200,
               "status": "passed"
             },
             "match": {
@@ -35,35 +35,119 @@
         "steps": [
           {
             "result": {
-              "duration": 34444080300,
+              "duration": 1325623500,
               "status": "passed"
             },
             "line": 5,
-            "name": "Kullanici \"greenkart_url\" sitesine gider",
+            "name": "Kullanici \"pagination_url\" sitesine gider",
             "match": {
               "arguments": [
                 {
-                  "val": "\"greenkart_url\"",
+                  "val": "\"pagination_url\"",
                   "offset": 10
                 }
               ],
               "location": "GreenKartAnaSayfa.kullanici_sitesine_gider(String)"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3223800100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Kullanici 2 sayfasina tiklar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 10
+                }
+              ],
+              "location": "PaginationStepDefinition.kullanici_sayfasina_tiklar(Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3068240600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Kullanici Oncesi butonuna tiklar",
+            "match": {
+              "location": "PaginationStepDefinition.kullanici_oncesi_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3072731700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Kullanici Sonraki butonuna tiklar",
+            "match": {
+              "location": "PaginationStepDefinition.kullanici_sonraki_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3069635000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Kullanici Birinci butonuna tiklar",
+            "match": {
+              "location": "PaginationStepDefinition.kullanici_birinci_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3073958700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Kullanici Son butonuna tiklar",
+            "match": {
+              "location": "PaginationStepDefinition.kullanici_son_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3042177200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Kullanici Sayfalarin saglikli bir sekilde degistigini Sayfa4 ile dogrular",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 59
+                }
+              ],
+              "location": "PaginationStepDefinition.kullanici_sayfalarin_saglikli_bir_sekilde_degistigini_sayfa_ile_dogrular(Integer)"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@greenkart"
+            "name": "@Pagination"
           }
         ]
       }
     ],
-    "name": "GreenKart test",
+    "name": "GreenKart Pagnation test",
     "description": "",
-    "id": "greenkart-test",
+    "id": "greenkart-pagnation-test",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/GreenKart.feature",
+    "uri": "file:src/test/resources/features/Pagination.feature",
     "tags": []
   }
 ]
