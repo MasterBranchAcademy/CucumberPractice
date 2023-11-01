@@ -6,7 +6,7 @@ import mba_cucumber.pages.PageObject;
 
 public class UrunEkle_StepD extends PageObject {
 
-    GreenKartPage greenKartPage = new Gre
+
 
     @Given("Kullanici {string} sitesine gider")
     public void kullaniciSitesineGider(String arg0) {
