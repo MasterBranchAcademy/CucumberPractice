@@ -1,6 +1,9 @@
 
 
-  Feature: jhs
+  Feature: Siparis tamamlama
 
-    Scenario: dkasdk
-      Given
+    @sparisTamamlama
+    Scenario: Bir kullanici gibi siparis verebilme
+      Given Kullanici "greenkart_url" sitesine gider
+      When "products" add to chart butonuna tiklar
+

@@ -11,7 +11,7 @@ public class PageObject {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    public void scrollAndclick(WebElement element){
+    public void scrollAndClick(WebElement element){
         scrollInto(element);
         element.click();
     }
