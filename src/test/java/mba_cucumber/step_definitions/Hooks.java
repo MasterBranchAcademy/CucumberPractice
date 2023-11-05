@@ -11,8 +11,8 @@ import java.time.Duration;
 
 public class Hooks {
 
-    protected static WebDriver driver;
-    protected static WebDriverWait wait;
+   public static WebDriver driver;
+    public static WebDriverWait wait;
 
     @Before
     public void setUp(){

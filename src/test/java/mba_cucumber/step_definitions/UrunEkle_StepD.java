@@ -10,30 +10,37 @@ import mba_cucumber.utilities.ConfigReader;
 import mba_cucumber.utilities.Driver;
 import org.junit.Assert;
 
+
+
+
 public class UrunEkle_StepD extends PageObject {
+
 
     GreenKartPage greenKartPage = new GreenKartPage();
 
     @Given("Kullanici greenkart_url sitesine gider")
     public void kullaniciSitesineGider() {
         Driver.getDriver().get(ConfigReader.getProperties("url"));
-
     }
 
+
     @When("products add to chart butonuna tiklar")
-    public void addToChartButonunaTiklar() {
+    public void addToChartButonunaTiklar()  {
         greenKartPage.clickAllProducts();
     }
 
-
+    @Then("Kullanici urunlerin eklendigini bes saniye ana sayfada dogrular")
+    public void kullaniciUrununEklendigiBesSaniyeAnaSayfadaDogrular() {
+        greenKartPage.setAllProducts();
+    }
     @And("sepete tiklar")
     public void sepeteTiklar() {
-        greenKartPage.clickSepet();
+        greenKartPage.getClickSepet();
     }
 
     @And("checkout butonuna tiklar")
     public void checkoutButonunaTiklar() {
-        greenKartPage.clickcheckoutButton();
+        greenKartPage.clickCheckoutButton();
     }
 
     @And("Secilen tum urunlerin sepette oldugunu dogrular")
@@ -72,7 +79,14 @@ public class UrunEkle_StepD extends PageObject {
     @Then("Kullanici siparisi basariyla tamamladigini dogrular")
     public void kullaniciSiparisiBasariylaTamamladiginiDogrular() {
         String actualMessage = greenKartPage.getFinalMessage();
-        Assert.assertEquals("Thank you, your order has been placed successfully\n" +
-                "You'll be redirected to Home page shortly!!", greenKartPage.getFinalMessage());
+        Assert.assertEquals("Kullanici siparisi basariyla tamamlayamadi","Thank you, your order has been placed successfully\n" +
+                "You'll be redirected to Home page shortly!!",actualMessage);
     }
+    @Then("Kullanici siparisi basariyla tamamlayamadigini dogrular")
+    public void kullaniciSiparisiBasariylaTamamlayamadiginiDogrular() {
+        String expectedMessage="Please accept Terms & Conditions - Required";
+        Assert.assertEquals("Kullanici siparisi basariyla tamamladi",expectedMessage,greenKartPage.getRequiredMessage());
+    }
+
+
 }

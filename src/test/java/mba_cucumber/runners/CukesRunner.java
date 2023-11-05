@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "/mba_cucumber/step_definitions",
         dryRun = false,
-        tags = "@greenkart"
+        tags = "@siparisTamamlama"
 
 )
 public class CukesRunner {
