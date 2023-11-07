@@ -28,7 +28,7 @@ public class Driver {
             switch (browser) {
                 case "chrome":
 
-                    System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
+                    System.setProperty("webdriver.chrome.driver", "./chromedriver");
                     driverPool.set(new ChromeDriver());
                     break;
                 case "chlrome-headess":
