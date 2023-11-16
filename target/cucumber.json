@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-10-30T09:18:37.711Z",
+        "start_timestamp": "2023-11-07T23:50:22.519Z",
         "before": [
           {
             "result": {
-              "duration": 1961716700,
+              "duration": 2659649800,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "Greenkart sayfasini test etme",
+        "line": 5,
+        "name": "Sepeti boşaltma işlemini test etme",
         "description": "",
-        "id": "greenkart-test;greenkart-sayfasini-test-etme",
+        "id": "greenkart-test;sepeti-boşaltma-işlemini-test-etme",
         "after": [
           {
             "result": {
-              "duration": 196954000,
+              "duration": 758876000,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 34444080300,
+              "duration": 2480783500,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "Kullanici \"greenkart_url\" sitesine gider",
             "match": {
               "arguments": [
@@ -50,6 +50,96 @@
               "location": "GreenKartAnaSayfa.kullanici_sitesine_gider(String)"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 61813200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Kullanici ana sayfanın başarıyla göründüğünü \"GREENKART\" yazisi ile doğrular",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GREENKART\"",
+                  "offset": 45
+                }
+              ],
+              "location": "GreenKartAnaSayfa.kullanici_ana_sayfanın_başarıyla_göründüğünü_yazisi_ile_doğrular(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 250262200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Kullanici cucumber urununu sepete ekler",
+            "match": {
+              "location": "GreenKartAnaSayfa.kullanici_cucumber_urununu_sepete_ekler()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 226700500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Kullanici sepete tiklar",
+            "match": {
+              "location": "GreenKartAnaSayfa.kullanici_sepete_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8701600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Kullanici urunun cucumber urunu oldugunu \"Cucumber - 1 Kg\" mesaji ile dogrular",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cucumber - 1 Kg\"",
+                  "offset": 41
+                }
+              ],
+              "location": "GreenKartAnaSayfa.kullanici_urunun_cucumber_urunu_oldugunu_mesaji_ile_dogrular(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 223687600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Kullanici urunu sepetten kaldirir",
+            "match": {
+              "location": "GreenKartAnaSayfa.kullanici_urunu_sepetten_kaldirir()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9262300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Kullanici sepetin bos oldugunu \"You cart is empty!\"  mesaj ile dogrular",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"You cart is empty!\"",
+                  "offset": 31
+                }
+              ],
+              "location": "GreenKartAnaSayfa.kullanici_sepetin_bos_oldugunu_mesaj_ile_dogrular(String)"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
