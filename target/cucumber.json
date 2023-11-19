@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-10-31T19:57:06.348Z",
+        "start_timestamp": "2023-11-19T10:24:34.638Z",
         "before": [
           {
             "result": {
-              "duration": 3120541300,
+              "duration": 5045769400,
               "status": "passed"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 4,
-        "name": "Greenkart Pagnation sayfasini test etme",
+        "name": "Ürünün sayisini sepette kontrol etme",
         "description": "",
-        "id": "greenkart-pagnation-test;greenkart-pagnation-sayfasini-test-etme",
+        "id": "green-cart;ürünün-sayisini-sepette-kontrol-etme",
         "after": [
           {
             "result": {
-              "duration": 339633200,
+              "duration": 1515896000,
               "status": "passed"
             },
             "match": {
@@ -35,15 +35,15 @@
         "steps": [
           {
             "result": {
-              "duration": 1325623500,
+              "duration": 3450943000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "Kullanici \"pagination_url\" sitesine gider",
+            "line": 6,
+            "name": "Kullanici \"greenkart_url\" sitesine gider",
             "match": {
               "arguments": [
                 {
-                  "val": "\"pagination_url\"",
+                  "val": "\"greenkart_url\"",
                   "offset": 10
                 }
               ],
@@ -53,101 +53,89 @@
           },
           {
             "result": {
-              "duration": 3223800100,
+              "duration": 1606647400,
               "status": "passed"
             },
-            "line": 6,
-            "name": "Kullanici 2 sayfasina tiklar",
+            "line": 7,
+            "name": "Kullanici beetroot urununu artirir",
             "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 10
-                }
-              ],
-              "location": "PaginationStepDefinition.kullanici_sayfasina_tiklar(Integer)"
+              "location": "AddCheckStepDefs.kullanici_beetroot_urununu_artirir()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1286084000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Kullanici beetroot urununu sepete ekler",
+            "match": {
+              "location": "AddCheckStepDefs.kullanici_beetroot_urununu_sepete_ekler()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3068240600,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Kullanici Oncesi butonuna tiklar",
-            "match": {
-              "location": "PaginationStepDefinition.kullanici_oncesi_butonuna_tiklar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3072731700,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Kullanici Sonraki butonuna tiklar",
-            "match": {
-              "location": "PaginationStepDefinition.kullanici_sonraki_butonuna_tiklar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3069635000,
+              "duration": 1280610600,
               "status": "passed"
             },
             "line": 9,
-            "name": "Kullanici Birinci butonuna tiklar",
+            "name": "Kullanici pupkin urununu sepete ekler",
             "match": {
-              "location": "PaginationStepDefinition.kullanici_birinci_butonuna_tiklar()"
+              "location": "AddCheckStepDefs.kullanici_urununu_sepete_ekler()"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 3073958700,
+              "duration": 1276619000,
               "status": "passed"
             },
             "line": 10,
-            "name": "Kullanici Son butonuna tiklar",
+            "name": "Kullanici pomegranate urununu sepete ekler",
             "match": {
-              "location": "PaginationStepDefinition.kullanici_son_butonuna_tiklar()"
+              "location": "AddCheckStepDefs.kullanici_pomegranate_urununu_sepete_ekler()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1310131800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Kullanici sepete gider",
+            "match": {
+              "location": "AddCheckStepDefs.kullanici_sepete_gider()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3042177200,
+              "duration": 1105350300,
               "status": "passed"
             },
-            "line": 11,
-            "name": "Kullanici Sayfalarin saglikli bir sekilde degistigini Sayfa4 ile dogrular",
+            "line": 12,
+            "name": "Kullanici urunlerin dogru bir sekilde sepete eklendigini dogrular",
             "match": {
-              "arguments": [
-                {
-                  "val": "4",
-                  "offset": 59
-                }
-              ],
-              "location": "PaginationStepDefinition.kullanici_sayfalarin_saglikli_bir_sekilde_degistigini_sayfa_ile_dogrular(Integer)"
+              "location": "AddCheckStepDefs.kullanici_urunlerin_dogru_bir_sekilde_sepete_eklendigini_dogrular()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Pagination"
+            "name": "@Zubeyde"
           }
         ]
       }
     ],
-    "name": "GreenKart Pagnation test",
+    "name": "Green Cart",
     "description": "",
-    "id": "greenkart-pagnation-test",
+    "id": "green-cart",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Pagination.feature",
+    "uri": "file:src/test/resources/features/AddCheck.feature",
     "tags": []
   }
 ]

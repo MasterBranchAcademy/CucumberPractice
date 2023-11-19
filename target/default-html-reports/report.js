@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Pagination.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/AddCheck.feature");
 formatter.feature({
-  "name": "GreenKart Pagnation test",
+  "name": "Green Cart",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Greenkart Pagnation sayfasini test etme",
+  "name": "Ürünün sayisini sepette kontrol etme",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Pagination"
+      "name": "@Zubeyde"
     }
   ]
 });
@@ -18,7 +18,7 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "Kullanici \"pagination_url\" sitesine gider",
+  "name": "Kullanici \"greenkart_url\" sitesine gider",
   "keyword": "Given "
 });
 formatter.match({
@@ -28,61 +28,61 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Kullanici 2 sayfasina tiklar",
+  "name": "Kullanici beetroot urununu artirir",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AddCheckStepDefs.kullanici_beetroot_urununu_artirir()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Kullanici beetroot urununu sepete ekler",
   "keyword": "When "
 });
 formatter.match({
-  "location": "PaginationStepDefinition.kullanici_sayfasina_tiklar(Integer)"
+  "location": "AddCheckStepDefs.kullanici_beetroot_urununu_sepete_ekler()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Kullanici Oncesi butonuna tiklar",
+  "name": "Kullanici pupkin urununu sepete ekler",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "AddCheckStepDefs.kullanici_urununu_sepete_ekler()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Kullanici pomegranate urununu sepete ekler",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "AddCheckStepDefs.kullanici_pomegranate_urununu_sepete_ekler()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Kullanici sepete gider",
   "keyword": "And "
 });
 formatter.match({
-  "location": "PaginationStepDefinition.kullanici_oncesi_butonuna_tiklar()"
+  "location": "AddCheckStepDefs.kullanici_sepete_gider()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Kullanici Sonraki butonuna tiklar",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "PaginationStepDefinition.kullanici_sonraki_butonuna_tiklar()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kullanici Birinci butonuna tiklar",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "PaginationStepDefinition.kullanici_birinci_butonuna_tiklar()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kullanici Son butonuna tiklar",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "PaginationStepDefinition.kullanici_son_butonuna_tiklar()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kullanici Sayfalarin saglikli bir sekilde degistigini Sayfa4 ile dogrular",
+  "name": "Kullanici urunlerin dogru bir sekilde sepete eklendigini dogrular",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "PaginationStepDefinition.kullanici_sayfalarin_saglikli_bir_sekilde_degistigini_sayfa_ile_dogrular(Integer)"
+  "location": "AddCheckStepDefs.kullanici_urunlerin_dogru_bir_sekilde_sepete_eklendigini_dogrular()"
 });
 formatter.result({
   "status": "passed"
