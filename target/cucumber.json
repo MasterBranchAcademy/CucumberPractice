@@ -3,6 +3,7 @@
     "line": 1,
     "elements": [
       {
+<<<<<<< HEAD
         "line": 3,
         "name": "Siparis Tamamlama",
         "description": "",
@@ -29,6 +30,13 @@
           {
             "result": {
               "duration": 3756430000,
+=======
+        "start_timestamp": "2023-11-19T10:24:34.638Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5045769400,
+>>>>>>> 837888c ("Eklenen urunler sepette görünüyor mu" adli taskim.)
               "status": "passed"
             },
             "match": {
@@ -36,6 +44,7 @@
             }
           }
         ],
+<<<<<<< HEAD
         "line": 9,
         "name": "Kullanici urunleri sectiginde Add To Cart butonunun Added olarak 5 saniye gorundugunu dogrular",
         "description": "",
@@ -44,6 +53,16 @@
           {
             "result": {
               "duration": 560957500,
+=======
+        "line": 4,
+        "name": "Ürünün sayisini sepette kontrol etme",
+        "description": "",
+        "id": "green-cart;ürünün-sayisini-sepette-kontrol-etme",
+        "after": [
+          {
+            "result": {
+              "duration": 1515896000,
+>>>>>>> 837888c ("Eklenen urunler sepette görünüyor mu" adli taskim.)
               "status": "passed"
             },
             "match": {
@@ -56,6 +75,7 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 156335028300,
               "status": "passed"
             },
@@ -63,12 +83,100 @@
             "name": "Kullanici urunlerin eklendigini bes saniye ana sayfada dogrular",
             "match": {
               "location": "UrunEkle_StepD.kullaniciUrununEklendigiBesSaniyeAnaSayfadaDogrular()"
+=======
+              "duration": 3450943000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Kullanici \"greenkart_url\" sitesine gider",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"greenkart_url\"",
+                  "offset": 10
+                }
+              ],
+              "location": "GreenKartAnaSayfa.kullanici_sitesine_gider(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1606647400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Kullanici beetroot urununu artirir",
+            "match": {
+              "location": "AddCheckStepDefs.kullanici_beetroot_urununu_artirir()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1286084000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Kullanici beetroot urununu sepete ekler",
+            "match": {
+              "location": "AddCheckStepDefs.kullanici_beetroot_urununu_sepete_ekler()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1280610600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Kullanici pupkin urununu sepete ekler",
+            "match": {
+              "location": "AddCheckStepDefs.kullanici_urununu_sepete_ekler()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1276619000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Kullanici pomegranate urununu sepete ekler",
+            "match": {
+              "location": "AddCheckStepDefs.kullanici_pomegranate_urununu_sepete_ekler()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1310131800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Kullanici sepete gider",
+            "match": {
+              "location": "AddCheckStepDefs.kullanici_sepete_gider()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1105350300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Kullanici urunlerin dogru bir sekilde sepete eklendigini dogrular",
+            "match": {
+              "location": "AddCheckStepDefs.kullanici_urunlerin_dogru_bir_sekilde_sepete_eklendigini_dogrular()"
+>>>>>>> 837888c ("Eklenen urunler sepette görünüyor mu" adli taskim.)
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
+<<<<<<< HEAD
             "name": "@siparisTamamlama"
           }
         ]
@@ -571,15 +679,26 @@
         "tags": [
           {
             "name": "@siparisTamamlama"
+=======
+            "name": "@Zubeyde"
+>>>>>>> 837888c ("Eklenen urunler sepette görünüyor mu" adli taskim.)
           }
         ]
       }
     ],
+<<<<<<< HEAD
     "name": "Siparis tamamlama",
     "description": "",
     "id": "siparis-tamamlama",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/urunEkle.feature",
+=======
+    "name": "Green Cart",
+    "description": "",
+    "id": "green-cart",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AddCheck.feature",
+>>>>>>> 837888c ("Eklenen urunler sepette görünüyor mu" adli taskim.)
     "tags": []
   }
 ]

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/urunEkle.feature");
 formatter.feature({
   "name": "Siparis tamamlama",
@@ -8,12 +9,33 @@ formatter.background({
   "name": "Siparis Tamamlama",
   "description": "",
   "keyword": "Background"
+=======
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/AddCheck.feature");
+formatter.feature({
+  "name": "Green Cart",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "Ürünün sayisini sepette kontrol etme",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Zubeyde"
+    }
+  ]
+>>>>>>> 837888c ("Eklenen urunler sepette görünüyor mu" adli taskim.)
 });
 formatter.before({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
   "name": "Kullanici greenkart_url sitesine gider",
+=======
+  "name": "Kullanici \"greenkart_url\" sitesine gider",
+>>>>>>> 837888c ("Eklenen urunler sepette görünüyor mu" adli taskim.)
   "keyword": "Given "
 });
 formatter.match({
@@ -22,6 +44,7 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+<<<<<<< HEAD
 formatter.scenario({
   "name": "Kullanici urunleri sectiginde Add To Cart butonunun Added olarak 5 saniye gorundugunu dogrular",
   "description": "",
@@ -401,6 +424,64 @@ formatter.step({
 });
 formatter.match({
   "location": "UrunEkle_StepD.kullaniciSiparisiBasariylaTamamlayamadiginiDogrular()"
+=======
+formatter.step({
+  "name": "Kullanici beetroot urununu artirir",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AddCheckStepDefs.kullanici_beetroot_urununu_artirir()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Kullanici beetroot urununu sepete ekler",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "AddCheckStepDefs.kullanici_beetroot_urununu_sepete_ekler()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Kullanici pupkin urununu sepete ekler",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "AddCheckStepDefs.kullanici_urununu_sepete_ekler()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Kullanici pomegranate urununu sepete ekler",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "AddCheckStepDefs.kullanici_pomegranate_urununu_sepete_ekler()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Kullanici sepete gider",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AddCheckStepDefs.kullanici_sepete_gider()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Kullanici urunlerin dogru bir sekilde sepete eklendigini dogrular",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddCheckStepDefs.kullanici_urunlerin_dogru_bir_sekilde_sepete_eklendigini_dogrular()"
+>>>>>>> 837888c ("Eklenen urunler sepette görünüyor mu" adli taskim.)
 });
 formatter.result({
   "status": "passed"
