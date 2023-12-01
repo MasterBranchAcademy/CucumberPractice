@@ -1,6 +1,6 @@
 Feature: Green Cart
 
-   @Zubeyde
+  @Pagination
   Scenario: Ürünün sayisini sepette kontrol etme
 
     Given Kullanici "greenkart_url" sitesine gider
