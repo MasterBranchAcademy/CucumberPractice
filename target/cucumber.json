@@ -3,11 +3,40 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-10-30T09:18:37.711Z",
+<<<<<<< HEAD
+        "line": 3,
+        "name": "Siparis Tamamlama",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7623744000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Kullanici greenkart_url sitesine gider",
+            "match": {
+              "location": "UrunEkle_StepD.kullaniciSitesineGider()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-11-05T22:40:43.547Z",
         "before": [
           {
             "result": {
-              "duration": 1961716700,
+              "duration": 3756430000,
+=======
+        "start_timestamp": "2023-11-19T10:24:34.638Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5045769400,
+>>>>>>> 837888c ("Eklenen urunler sepette görünüyor mu" adli taskim.)
               "status": "passed"
             },
             "match": {
@@ -15,14 +44,25 @@
             }
           }
         ],
-        "line": 4,
-        "name": "Greenkart sayfasini test etme",
+<<<<<<< HEAD
+        "line": 9,
+        "name": "Kullanici urunleri sectiginde Add To Cart butonunun Added olarak 5 saniye gorundugunu dogrular",
         "description": "",
-        "id": "greenkart-test;greenkart-sayfasini-test-etme",
+        "id": "siparis-tamamlama;kullanici-urunleri-sectiginde-add-to-cart-butonunun-added-olarak-5-saniye-gorundugunu-dogrular",
         "after": [
           {
             "result": {
-              "duration": 196954000,
+              "duration": 560957500,
+=======
+        "line": 4,
+        "name": "Ürünün sayisini sepette kontrol etme",
+        "description": "",
+        "id": "green-cart;ürünün-sayisini-sepette-kontrol-etme",
+        "after": [
+          {
+            "result": {
+              "duration": 1515896000,
+>>>>>>> 837888c ("Eklenen urunler sepette görünüyor mu" adli taskim.)
               "status": "passed"
             },
             "match": {
@@ -35,10 +75,19 @@
         "steps": [
           {
             "result": {
-              "duration": 34444080300,
+<<<<<<< HEAD
+              "duration": 156335028300,
               "status": "passed"
             },
-            "line": 5,
+            "line": 10,
+            "name": "Kullanici urunlerin eklendigini bes saniye ana sayfada dogrular",
+            "match": {
+              "location": "UrunEkle_StepD.kullaniciUrununEklendigiBesSaniyeAnaSayfadaDogrular()"
+=======
+              "duration": 3450943000,
+              "status": "passed"
+            },
+            "line": 6,
             "name": "Kullanici \"greenkart_url\" sitesine gider",
             "match": {
               "arguments": [
@@ -50,20 +99,606 @@
               "location": "GreenKartAnaSayfa.kullanici_sitesine_gider(String)"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1606647400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Kullanici beetroot urununu artirir",
+            "match": {
+              "location": "AddCheckStepDefs.kullanici_beetroot_urununu_artirir()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1286084000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Kullanici beetroot urununu sepete ekler",
+            "match": {
+              "location": "AddCheckStepDefs.kullanici_beetroot_urununu_sepete_ekler()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1280610600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Kullanici pupkin urununu sepete ekler",
+            "match": {
+              "location": "AddCheckStepDefs.kullanici_urununu_sepete_ekler()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1276619000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Kullanici pomegranate urununu sepete ekler",
+            "match": {
+              "location": "AddCheckStepDefs.kullanici_pomegranate_urununu_sepete_ekler()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1310131800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Kullanici sepete gider",
+            "match": {
+              "location": "AddCheckStepDefs.kullanici_sepete_gider()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1105350300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Kullanici urunlerin dogru bir sekilde sepete eklendigini dogrular",
+            "match": {
+              "location": "AddCheckStepDefs.kullanici_urunlerin_dogru_bir_sekilde_sepete_eklendigini_dogrular()"
+>>>>>>> 837888c ("Eklenen urunler sepette görünüyor mu" adli taskim.)
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@greenkart"
+<<<<<<< HEAD
+            "name": "@siparisTamamlama"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Siparis Tamamlama",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3568272200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Kullanici greenkart_url sitesine gider",
+            "match": {
+              "location": "UrunEkle_StepD.kullaniciSitesineGider()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-11-05T22:43:31.835Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1840129800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Bir kullanici gibi siparis verebilme",
+        "description": "",
+        "id": "siparis-tamamlama;bir-kullanici-gibi-siparis-verebilme",
+        "after": [
+          {
+            "result": {
+              "duration": 415146200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4723708600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "products add to chart butonuna tiklar",
+            "match": {
+              "location": "UrunEkle_StepD.addToChartButonunaTiklar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 281632500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "sepete tiklar",
+            "match": {
+              "location": "UrunEkle_StepD.sepeteTiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 211471100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "checkout butonuna tiklar",
+            "match": {
+              "location": "UrunEkle_StepD.checkoutButonunaTiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52373700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Secilen tum urunlerin sepette oldugunu dogrular",
+            "match": {
+              "location": "UrunEkle_StepD.secilenTumUrunlerinSepetteOldugunuDogrular()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 620240300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Place Order butonuna tiklar",
+            "match": {
+              "location": "UrunEkle_StepD.placeOrderButonunaTiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 144309400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Kullanici Select butonuna tiklar",
+            "match": {
+              "location": "UrunEkle_StepD.kullaniciSelectButonunaTiklar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 419768900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Kullanici bir ulke secer",
+            "match": {
+              "location": "UrunEkle_StepD.kullaniciBirUlkeSecer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96522800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Kullanici checkbox butonuna tiklar",
+            "match": {
+              "location": "UrunEkle_StepD.kullaniciCheckboxButonunaTiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 76034800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Kullanici Proceed butonuna tiklar",
+            "match": {
+              "location": "UrunEkle_StepD.kullaniciProceedButonunaTiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57788900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Kullanici siparisi basariyla tamamladigini dogrular",
+            "match": {
+              "location": "UrunEkle_StepD.kullaniciSiparisiBasariylaTamamladiginiDogrular()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@siparisTamamlama"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Siparis Tamamlama",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3547257600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Kullanici greenkart_url sitesine gider",
+            "match": {
+              "location": "UrunEkle_StepD.kullaniciSitesineGider()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-11-05T22:43:44.344Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1659738500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Kullanici checkBox butonuna tiklamadan siparisi tamamlayamamali",
+        "description": "",
+        "id": "siparis-tamamlama;kullanici-checkbox-butonuna-tiklamadan-siparisi-tamamlayamamali",
+        "after": [
+          {
+            "result": {
+              "duration": 401724700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4734722200,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "products add to chart butonuna tiklar",
+            "match": {
+              "location": "UrunEkle_StepD.addToChartButonunaTiklar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 268943200,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "sepete tiklar",
+            "match": {
+              "location": "UrunEkle_StepD.sepeteTiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 203683800,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "checkout butonuna tiklar",
+            "match": {
+              "location": "UrunEkle_StepD.checkoutButonunaTiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51932800,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Secilen tum urunlerin sepette oldugunu dogrular",
+            "match": {
+              "location": "UrunEkle_StepD.secilenTumUrunlerinSepetteOldugunuDogrular()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 623433400,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Place Order butonuna tiklar",
+            "match": {
+              "location": "UrunEkle_StepD.placeOrderButonunaTiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 156957700,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Kullanici Select butonuna tiklar",
+            "match": {
+              "location": "UrunEkle_StepD.kullaniciSelectButonunaTiklar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 433122000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Kullanici bir ulke secer",
+            "match": {
+              "location": "UrunEkle_StepD.kullaniciBirUlkeSecer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92988200,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Kullanici Proceed butonuna tiklar",
+            "match": {
+              "location": "UrunEkle_StepD.kullaniciProceedButonunaTiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51923900,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Kullanici siparisi basariyla tamamlayamadigini dogrular",
+            "match": {
+              "location": "UrunEkle_StepD.kullaniciSiparisiBasariylaTamamlayamadiginiDogrular()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@siparisTamamlama"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Siparis Tamamlama",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3687036000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Kullanici greenkart_url sitesine gider",
+            "match": {
+              "location": "UrunEkle_StepD.kullaniciSitesineGider()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-11-05T22:43:56.571Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1942591700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 44,
+        "name": "Kullanici bir ulke secmeden ve checkBox butonuna tiklamadan siparisini tamamlayamamali",
+        "description": "",
+        "id": "siparis-tamamlama;kullanici-bir-ulke-secmeden-ve-checkbox-butonuna-tiklamadan-siparisini-tamamlayamamali",
+        "after": [
+          {
+            "result": {
+              "duration": 354577200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4748332100,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "products add to chart butonuna tiklar",
+            "match": {
+              "location": "UrunEkle_StepD.addToChartButonunaTiklar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 271903600,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "sepete tiklar",
+            "match": {
+              "location": "UrunEkle_StepD.sepeteTiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 216748200,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "checkout butonuna tiklar",
+            "match": {
+              "location": "UrunEkle_StepD.checkoutButonunaTiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51614600,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Secilen tum urunlerin sepette oldugunu dogrular",
+            "match": {
+              "location": "UrunEkle_StepD.secilenTumUrunlerinSepetteOldugunuDogrular()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 624066200,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "Place Order butonuna tiklar",
+            "match": {
+              "location": "UrunEkle_StepD.placeOrderButonunaTiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 156586300,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "Kullanici Select butonuna tiklar",
+            "match": {
+              "location": "UrunEkle_StepD.kullaniciSelectButonunaTiklar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 256523900,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "Kullanici Proceed butonuna tiklar",
+            "match": {
+              "location": "UrunEkle_StepD.kullaniciProceedButonunaTiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66123600,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Kullanici siparisi basariyla tamamlayamadigini dogrular",
+            "match": {
+              "location": "UrunEkle_StepD.kullaniciSiparisiBasariylaTamamlayamadiginiDogrular()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@siparisTamamlama"
+=======
+            "name": "@Zubeyde"
+>>>>>>> 837888c ("Eklenen urunler sepette görünüyor mu" adli taskim.)
           }
         ]
       }
     ],
-    "name": "GreenKart test",
+<<<<<<< HEAD
+    "name": "Siparis tamamlama",
     "description": "",
-    "id": "greenkart-test",
+    "id": "siparis-tamamlama",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/GreenKart.feature",
+    "uri": "file:src/test/resources/features/urunEkle.feature",
+=======
+    "name": "Green Cart",
+    "description": "",
+    "id": "green-cart",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AddCheck.feature",
+>>>>>>> 837888c ("Eklenen urunler sepette görünüyor mu" adli taskim.)
     "tags": []
   }
 ]

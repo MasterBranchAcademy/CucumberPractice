@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber HTML Reports</td>
+        <td>1</td>
+      <td>05 Nov 2023, 23:44</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">Hooks.closeDriver()</td>
+              <td>4</td>
+              <td class="duration" data-value="433101400">0.433</td>
+              <td class="duration" data-value="433101400">0.560</td>
+              <td class="duration" data-value="1732405600">1.732</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Hooks.setUp()</td>
+              <td>4</td>
+              <td class="duration" data-value="2299722500">2.299</td>
+              <td class="duration" data-value="2299722500">3.756</td>
+              <td class="duration" data-value="9198890000">9.198</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">UrunEkle_StepD.addToChartButonunaTiklar()</td>
+              <td>3</td>
+              <td class="duration" data-value="4735587633">4.735</td>
+              <td class="duration" data-value="4735587633">4.748</td>
+              <td class="duration" data-value="14206762900">14.206</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">UrunEkle_StepD.checkoutButonunaTiklar()</td>
+              <td>3</td>
+              <td class="duration" data-value="210634366">0.210</td>
+              <td class="duration" data-value="210634366">0.216</td>
+              <td class="duration" data-value="631903100">0.631</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">UrunEkle_StepD.kullaniciBirUlkeSecer()</td>
+              <td>2</td>
+              <td class="duration" data-value="426445450">0.426</td>
+              <td class="duration" data-value="426445450">0.433</td>
+              <td class="duration" data-value="852890900">0.852</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">UrunEkle_StepD.kullaniciCheckboxButonunaTiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="96522800">0.096</td>
+              <td class="duration" data-value="96522800">0.096</td>
+              <td class="duration" data-value="96522800">0.096</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">UrunEkle_StepD.kullaniciProceedButonunaTiklar()</td>
+              <td>3</td>
+              <td class="duration" data-value="141848966">0.141</td>
+              <td class="duration" data-value="141848966">0.256</td>
+              <td class="duration" data-value="425546900">0.425</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">UrunEkle_StepD.kullaniciSelectButonunaTiklar()</td>
+              <td>3</td>
+              <td class="duration" data-value="152617800">0.152</td>
+              <td class="duration" data-value="152617800">0.156</td>
+              <td class="duration" data-value="457853400">0.457</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">UrunEkle_StepD.kullaniciSiparisiBasariylaTamamladiginiDogrular()</td>
+              <td>1</td>
+              <td class="duration" data-value="57788900">0.057</td>
+              <td class="duration" data-value="57788900">0.057</td>
+              <td class="duration" data-value="57788900">0.057</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">UrunEkle_StepD.kullaniciSiparisiBasariylaTamamlayamadiginiDogrular()</td>
+              <td>2</td>
+              <td class="duration" data-value="59023750">0.059</td>
+              <td class="duration" data-value="59023750">0.066</td>
+              <td class="duration" data-value="118047500">0.118</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">UrunEkle_StepD.kullaniciSitesineGider()</td>
+              <td>4</td>
+              <td class="duration" data-value="4606577450">4.606</td>
+              <td class="duration" data-value="4606577450">7.623</td>
+              <td class="duration" data-value="18426309800">18.426</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">UrunEkle_StepD.kullaniciUrununEklendigiBesSaniyeAnaSayfadaDogrular()</td>
+              <td>1</td>
+              <td class="duration" data-value="156335028300">2:36.335</td>
+              <td class="duration" data-value="156335028300">2:36.335</td>
+              <td class="duration" data-value="156335028300">2:36.335</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">UrunEkle_StepD.placeOrderButonunaTiklar()</td>
+              <td>3</td>
+              <td class="duration" data-value="622579966">0.622</td>
+              <td class="duration" data-value="622579966">0.624</td>
+              <td class="duration" data-value="1867739900">1.867</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">UrunEkle_StepD.secilenTumUrunlerinSepetteOldugunuDogrular()</td>
+              <td>3</td>
+              <td class="duration" data-value="51973700">0.051</td>
+              <td class="duration" data-value="51973700">0.052</td>
+              <td class="duration" data-value="155921100">0.155</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">UrunEkle_StepD.sepeteTiklar()</td>
+              <td>3</td>
+              <td class="duration" data-value="274159766">0.274</td>
+              <td class="duration" data-value="274159766">0.281</td>
+              <td class="duration" data-value="822479300">0.822</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>15</td>
+            <td>40</td>
+            <td class="duration">5.134</td>
+            <td class="duration">2:36.335</td>
+            <td class="duration">3:25.386</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
