@@ -2,10 +2,16 @@ package mba_cucumber.step_definitions;
 
 import io.cucumber.java.en.*;
 import mba_cucumber.pages.PaginationPages;
+import mba_cucumber.utilities.ConfigReader;
+import mba_cucumber.utilities.Driver;
 import org.junit.Assert;
 
 public class PaginationStepDefinition {
     PaginationPages paginationPages = new PaginationPages();
+    @Given("Kullanici pagination_url sitesine gider")
+    public void kullaniciPagination_urlSitesineGider() {
+        Driver.getDriver().get(ConfigReader.getProperties("pagination_url"));
+    }
 
     @When("Kullanici {int} sayfasina tiklar")
     public void kullanici_sayfasina_tiklar(Integer pageNumber) throws InterruptedException {
@@ -37,7 +43,7 @@ public class PaginationStepDefinition {
         Thread.sleep(3000);
     }
 
-    @Then("Kullanici Sayfalarin saglikli bir sekilde degistigini Sayfa{int} ile dogrular")
+    @Then("Kullanici Sayfalarin saglikli bir sekilde degistigini Sayfa {int} ile dogrular")
     public void kullanici_sayfalarin_saglikli_bir_sekilde_degistigini_sayfa_ile_dogrular(Integer pageNumber) throws InterruptedException {
         Assert.assertTrue(paginationPages.isPageActive(pageNumber));
         Thread.sleep(3000);

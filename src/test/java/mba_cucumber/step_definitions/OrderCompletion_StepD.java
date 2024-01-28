@@ -13,7 +13,7 @@ import org.junit.Assert;
 
 
 
-public class UrunEkle_StepD extends PageObject {
+public class OrderCompletion_StepD extends PageObject {
 
 
     GreenKartPage greenKartPage = new GreenKartPage();
@@ -87,6 +87,4 @@ public class UrunEkle_StepD extends PageObject {
         String expectedMessage="Please accept Terms & Conditions - Required";
         Assert.assertEquals("Kullanici siparisi basariyla tamamladi",expectedMessage,greenKartPage.getRequiredMessage());
     }
-
-
 }

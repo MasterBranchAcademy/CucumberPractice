@@ -1,17 +1,17 @@
-Feature: Siparis tamamlama
+Feature: Order Completion
 
-  Background: Siparis Tamamlama
+  Background: Order Completion
 
     Given Kullanici greenkart_url sitesine gider
 
-  @siparisTamamlama
+  @orderCompletion
 
     Scenario: Kullanici urunleri sectiginde Add To Cart butonunun Added olarak 5 saniye gorundugunu dogrular
     Then Kullanici urunlerin eklendigini bes saniye ana sayfada dogrular
 
 
 
-  @siparisTamamlama
+  @orderCompletion
 
   Scenario: Bir kullanici gibi siparis verebilme
     When products add to chart butonuna tiklar
@@ -26,7 +26,7 @@ Feature: Siparis tamamlama
     Then Kullanici siparisi basariyla tamamladigini dogrular
 
 
-  @siparisTamamlama
+  @orderCompletion
 
   Scenario: Kullanici checkBox butonuna tiklamadan siparisi tamamlayamamali
     When products add to chart butonuna tiklar
@@ -39,7 +39,7 @@ Feature: Siparis tamamlama
     And Kullanici Proceed butonuna tiklar
     Then Kullanici siparisi basariyla tamamlayamadigini dogrular
 
-  @siparisTamamlama
+  @orderCompletion
 
   Scenario: Kullanici bir ulke secmeden ve checkBox butonuna tiklamadan siparisini tamamlayamamali
     When products add to chart butonuna tiklar
