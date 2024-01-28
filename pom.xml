@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>groupId</groupId>
-    <artifactId>CucumberPractice</artifactId>
+    <artifactId>GreenKartUIAutomationProject</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
