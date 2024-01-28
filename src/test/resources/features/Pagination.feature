@@ -1,7 +1,7 @@
 Feature: GreenKart Pagnation test
 
   @Pagination
-  Scenario: Greenkart Pagnation sayfasini test etme
+  Scenario: Greenkart Pagination sayfasini test etme
     Given Kullanici "pagination_url" sitesine gider
     When  Kullanici 2 sayfasina tiklar
     And   Kullanici Oncesi butonuna tiklar
